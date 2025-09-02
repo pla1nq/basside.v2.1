@@ -9,7 +9,6 @@
         src=""
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-        allowfullscreen
       ></iframe>
     </div>
   `,document.body.appendChild(o);const s=o.querySelector("#videoIframe"),a=o.querySelector(".video-modal__overlay"),v=o.querySelector(".video-modal__close");function e(n){s.src=`https://www.youtube-nocookie.com/embed/${n}?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1`,o.classList.add("is-open"),document.body.style.overflow="hidden"}function t(){s.src="",o.classList.remove("is-open"),document.body.style.overflow=""}return v.addEventListener("click",t),a.addEventListener("click",t),e}const T="/basside.v2.1/assets/hero-bg-CsPP1hJl.png",g={"hero-bg.png":T};function K(){const o=q(),s=document.querySelectorAll("[data-js-tabs-content]"),a=document.querySelectorAll("[data-js-tabs-button]"),v=Object.keys(L);s.forEach((e,t)=>{const n=e.querySelector(".tabs__content-list"),l=L[v[t]]||[],f=l.slice(0,4),m=l.slice(4);if(n.innerHTML="",f.forEach(u=>{const r=document.createElement("li");r.className="tabs__content-item",r.innerHTML=`
